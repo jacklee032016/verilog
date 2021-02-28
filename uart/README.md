@@ -3,14 +3,14 @@
 ## Test with HW
 
 add following files into vivado to test onboard
-*. fifo.v
-*. debouncer.v
-*. baudrate_gen.v
-*. uart_tx.v
-*. uart_rx.v
-*. uart.v
-*. uart_test.v
-*. constrains/nexysUart.xdc
+1. fifo.v
+1. debouncer.v
+1. baudrate_gen.v
+1. uart_tx.v
+1. uart_rx.v
+1. uart.v
+1. uart_test.v
+1. constrains/nexysUart.xdc
 
 
 Top level module `uart_test`:
