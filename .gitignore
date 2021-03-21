@@ -21,5 +21,7 @@ bin/
 *.suo
 *.log
 *.tlog
+*.asdb
+*.awc
 build
 node_modules

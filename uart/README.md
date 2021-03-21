@@ -15,6 +15,9 @@ add following files into vivado to test onboard
 
 Top level module `uart_test`:
 * Button-1: output every bytes received on TX with value +1
+* baudrate: 19200
+* test with RealTerm to capture ASCII and bin simultaneously;
+* be carefull: input focus should be in terminal window when use `RealTerm`;
 
 
 ## test bench

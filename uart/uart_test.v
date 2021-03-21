@@ -1,6 +1,7 @@
 /*
 * test UART TX and RX on xvideo board
-* 
+* baudrate: 19200; after RX bytes; then use BTN1 to TX the received bytes; 
+* every output bytes is the received_byte+1
 */
 
 //`define	TEST_BENCH

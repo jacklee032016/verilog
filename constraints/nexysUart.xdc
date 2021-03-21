@@ -42,3 +42,10 @@ set_property -dict { PACKAGE_PIN W16   IOSTANDARD LVCMOS25 } [get_ports { LED[5]
 set_property -dict { PACKAGE_PIN W15   IOSTANDARD LVCMOS25 } [get_ports { LED[6] }]; #IO_L16P_T2_13 Sch=led[6]
 set_property -dict { PACKAGE_PIN Y13   IOSTANDARD LVCMOS25 } [get_ports { LED[7] }]; #IO_L5P_T0_13 Sch=led[7]
 
+
+##HID port
+set_property -dict { PACKAGE_PIN W17   IOSTANDARD LVCMOS33 } [get_ports { ps2_clk }]; #IO_L16N_T2_A15_D31_14 Sch=ps2_clk
+set_property -dict { PACKAGE_PIN N13   IOSTANDARD LVCMOS33 } [get_ports { ps2_data }]; #IO_L23P_T3_A03_D19_14 Sch=ps2_data
+# internal pull-up for clock and data
+set_property PULLTYPE PULLUP [get_ports { ps2_clk }]
+set_property PULLTYPE PULLUP [get_ports { ps2_data }]

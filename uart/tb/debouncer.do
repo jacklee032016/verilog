@@ -1,6 +1,10 @@
 
-vlog $dsn/src/debouncer.v
-vlog $dsn/src/debouncer_tb.v
+set GIT_HOME=D:\fpga\git\verilog\
+
+#vlog $dsn/src/debouncer.v
+#vlog $dsn/src/debouncer_tb.v
+vlog $my_lib_folder/debouncer.v
+vlog $my_lib_folder/debouncer_tb.v
 
 vsim +access +mdebouncer_tb debouncer_tb
 
