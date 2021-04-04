@@ -15,3 +15,5 @@ Read at 0x00_00_80, where value is 0xAA;
    
    Debug with `SPI CS` should be controlled by externel module, not SpiMaster.
    
+   The first byte read out is not correct, always be 0xFF.
+   

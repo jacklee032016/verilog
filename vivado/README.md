@@ -13,7 +13,13 @@ Test on xvideo board with Vivado
 Steps:
 
 * Enter command line tools of Vivado TCL Shell;
-* Change into this directory;
+* Change into this directory, such as:
+
+```
+cd d:
+cd fpga/git/verilog/vivado
+```
+
 * run 'source createProjXXX.tcl';
 * Open vivado project and Generate Bitstream;
 
