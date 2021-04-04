@@ -49,3 +49,12 @@ set_property -dict { PACKAGE_PIN N13   IOSTANDARD LVCMOS33 } [get_ports { ps2_da
 # internal pull-up for clock and data
 set_property PULLTYPE PULLUP [get_ports { ps2_clk }]
 set_property PULLTYPE PULLUP [get_ports { ps2_data }]
+
+
+##QSPI
+set_property -dict { PACKAGE_PIN T19   IOSTANDARD LVCMOS33 } [get_ports { spi_cs }]; #IO_L6P_T0_FCS_B_14 Sch=qspi_cs
+set_property -dict { PACKAGE_PIN P22   IOSTANDARD LVCMOS33 } [get_ports { spi_dout }]; #IO_L1P_T0_D00_MOSI_14 Sch=qspi_dq[0]
+set_property -dict { PACKAGE_PIN R22   IOSTANDARD LVCMOS33 } [get_ports { spi_din }]; #IO_L1N_T0_D01_DIN_14 Sch=qspi_dq[1]
+set_property -dict { PACKAGE_PIN P21   IOSTANDARD LVCMOS33 } [get_ports { spi_wp_n }]; #IO_L2P_T0_D02_14 Sch=qspi_dq[2]
+set_property -dict { PACKAGE_PIN R21   IOSTANDARD LVCMOS33 } [get_ports { spi_hold_n }]; #IO_L2N_T0_D03_14 Sch=qspi_dq[3]
+set_property -dict { PACKAGE_PIN W5    IOSTANDARD LVCMOS33 } [get_ports { spi_clk }]; #IO_L15N_T2_DQS_34 Sch=scl

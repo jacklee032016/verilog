@@ -5,7 +5,7 @@
 
 module uart
 	#(parameter
-		BAUDRATE_COUNT = 326,
+		BAUDRATE_COUNT = 326,  /* baudrate 19200 */
 		DATA_BITS = 8,
 		FIFO_SIZE = 8
 	)

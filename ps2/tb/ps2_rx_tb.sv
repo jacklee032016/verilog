@@ -101,7 +101,7 @@ module ps2_rx_tb;
 		for(integer i=1; i< 10; i++)
 			begin
 				ps2_data = 1'b0;
-				repeat(i) @(negedge(clk)); 
+				@(negedge(clk); 
 				$display("low level of ps2_data at i %d %d", i, $time);
 				ps2_data = 1'b1;
 				repeat(10) @(negedge(clk));
